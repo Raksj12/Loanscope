@@ -1,0 +1,15 @@
+{
+  "name": "loanscope",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace @loanscope/backend",
+    "dev:frontend": "npm run dev --workspace @loanscope/frontend",
+    "test:engine": "npm run test --workspace @loanscope/calc-engine",
+    "build:frontend": "npm run build --workspace @loanscope/frontend"
+  }
+}
